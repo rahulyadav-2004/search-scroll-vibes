@@ -8,14 +8,14 @@ const DownloadLinks = () => {
       <div className="flex gap-4">
         <a href="#" className="transition-transform hover:scale-105">
           <img 
-            src="/lovable-uploads/306c4901-434e-4a08-9a43-88dc0247983f.png" 
+            src="https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/scroll-jhb7n2/assets/rsfnuoje4ta9/App_Store.png" 
             alt="App Store" 
             className="w-[125px] h-[36px]"
           />
         </a>
         <a href="#" className="transition-transform hover:scale-105">
           <img 
-            src="/lovable-uploads/306c4901-434e-4a08-9a43-88dc0247983f.png" 
+            src="https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/scroll-jhb7n2/assets/guyleh1vnhec/Google_Play.png" 
             alt="Google Play" 
             className="w-[124px] h-[36px]"
           />
