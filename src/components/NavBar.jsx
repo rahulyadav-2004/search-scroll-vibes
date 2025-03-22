@@ -2,7 +2,7 @@
 import React from 'react';
 import SearchBar from './SearchBar';
 
-const NavBar: React.FC = () => {
+const NavBar = () => {
   return (
     <div className="w-full h-[58px] bg-white flex items-center px-4 md:px-[52px] justify-between border-b border-gray-100">
       <div className="flex items-center gap-3 w-full md:w-[307px]">

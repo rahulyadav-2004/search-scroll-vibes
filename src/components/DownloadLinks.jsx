@@ -1,7 +1,7 @@
 
 import React from 'react';
 
-const DownloadLinks: React.FC = () => {
+const DownloadLinks = () => {
   return (
     <div className="flex flex-col items-center pb-8 animate-fade-up" style={{ animationDelay: '0.1s' }}>
       <div className="text-white text-base mb-4">Get the app</div>

@@ -2,7 +2,7 @@
 import React from 'react';
 import { Search } from 'lucide-react';
 
-const SearchBar: React.FC = () => {
+const SearchBar = () => {
   return (
     <div className="search-field">
       <Search className="w-4 h-4 text-[#818C99] flex-shrink-0" />
