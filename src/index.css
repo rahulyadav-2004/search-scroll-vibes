@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;500;600&family=Roboto:wght@400;500;600&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -35,19 +38,12 @@
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
@@ -98,4 +94,88 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.segmented-tab {
+  @apply flex-1 h-9 flex items-center justify-center text-sm font-semibold cursor-pointer transition-all;
+}
+
+.segmented-tab.active {
+  @apply shadow-[0px_0px_1px_1px_rgba(0,0,0,0.25)] bg-white rounded-lg;
+}
+
+.segmented-tab:not(.active) {
+  @apply text-black;
+}
+
+.search-field {
+  @apply h-9 w-full flex items-center rounded-lg bg-scroll-gray-200 px-3;
+}
+
+.button-primary {
+  @apply w-full h-[37px] bg-scroll-red text-white font-semibold rounded-lg text-base transition-all hover:bg-opacity-90 active:bg-opacity-80;
+}
+
+.button-secondary {
+  @apply w-full h-[37px] border border-scroll-gray-600 text-black font-semibold rounded-lg text-base transition-all hover:bg-scroll-gray-100 active:bg-scroll-gray-200;
+}
+
+.button-social {
+  @apply w-full h-[37px] border border-scroll-gray-400 rounded-lg flex items-center justify-center gap-2 transition-all;
+}
+
+.auth-divider {
+  @apply flex items-center gap-2 my-3;
+}
+
+.auth-divider::before,
+.auth-divider::after {
+  content: "";
+  @apply h-px flex-1 bg-scroll-gray-400;
+}
+
+.scroll-logo-particles {
+  position: relative;
+}
+
+.scroll-logo-particles .particle {
+  @apply absolute rounded-full bg-white;
+}
+
+.scroll-logo-particles .particle-1 {
+  width: 10px;
+  height: 10px;
+  left: 4px;
+  top: 15px;
+}
+
+.scroll-logo-particles .particle-2 {
+  width: 11px;
+  height: 11px;
+  left: 37px;
+  top: 14px;
+}
+
+.scroll-logo-particles .particle-3 {
+  width: 12px;
+  height: 12px;
+  left: 25px;
+  top: 13px;
+}
+
+.scroll-logo-particles .particle-4 {
+  width: 11px;
+  height: 11px;
+  left: 14px;
+  top: 14px;
+}
+
+.scroll-logo-line {
+  width: 46px;
+  height: 24px;
+  position: absolute;
+  left: 3px;
+  top: 19px;
+  background-color: white;
+  border-radius: 12px;
 }
